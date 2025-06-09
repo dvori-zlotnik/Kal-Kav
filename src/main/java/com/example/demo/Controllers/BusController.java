@@ -15,7 +15,7 @@ public class BusController {
     @Autowired
     public BusService busService;
     @GetMapping("/getall")
-    public ResponseEntity<Iterable<BusDTO>> getall() {
+    public ResponseEntity<Iterable<BusDTO>> getAll() {
         return ResponseEntity.ok(busService.getAll());
     }
 
