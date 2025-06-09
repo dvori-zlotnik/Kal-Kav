@@ -9,11 +9,5 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.Models.Bus;
 @Repository
 public interface BusRepository extends JpaRepository<Bus, Long> {
-public Bus save(Bus bus);
-public Optional<Bus> findById(Long id);
-public List<Bus> findAll();
-public void deleteById(Long id);
-public void delete(Bus bus);
-public long count();
-public boolean existsById(Long id); 
+
 }
